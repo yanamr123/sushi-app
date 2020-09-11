@@ -1,0 +1,48 @@
+body{
+  margin: 0px;
+  width: 1024px;
+  height: 460px;
+  font-family: Verdana, sans-serif;
+}
+
+.background{
+  width: 870px;
+  height: 639px;
+  background: #c00e32;
+  position:absolute;
+  top:41px;
+  left:200px;
+}
+
+#back{
+  font-size:30px;
+  text-align: center;
+  color:black;
+  position: absolute;;
+  background-color: white;
+  width:100px;
+  height:40px;
+  top:630px;
+  left:220px;
+}
+
+h2{
+  font-weight:bold;
+  font-size: 45px;
+  position:absolute;
+  color:white;
+  top:120px;
+  left:300px;
+}
+
+h2 > #total_fee{
+  padding: 20 0px;
+  font-weight:bold;
+  color:white;
+}
+
+#tweet-area{
+  position: absolute;
+  top:640px;
+  left:940px;
+}

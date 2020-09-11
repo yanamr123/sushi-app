@@ -1,0 +1,95 @@
+body{
+  margin: 0px;
+  width: 1024px;
+  height: 460px;
+  font-family: Verdana, sans-serif;
+}
+
+.background{
+  width: 870px;
+  height: 639px;
+  background: #c00e32;
+  position:absolute;
+  top:41px;
+  left:200px;
+}
+
+h1{
+  position:absolute;
+  color:white;
+  top:50px;
+  left:300px;
+}
+
+.table_area{
+  position:absolute;
+  width:700px;
+  height:464px;
+  top: 120px;
+  left: 280px;
+  overflow: scroll;
+
+}
+
+table{
+  color: black;
+  width: 700px;
+  text-align: center;
+  /* top: 120px; */
+  /* left: 280px; */
+  border-collapse: collapse;
+}
+
+table,th,td{
+  border: solid 2px black;
+}
+
+th{
+  font-size:30px;
+  background: #fffacd;
+  height: 50px;
+}
+
+td {
+  font-size:30px;
+  background: #efefef;
+  height: 47px;
+  color:black;
+}
+
+#fee{
+  position: absolute;
+  background-color: white;
+  font-size:60px;
+  width:240px;
+  height:50px;
+  top:160px;
+  left:780px;
+  text-align: center;
+}
+
+nav{
+  font-size:30px;
+  text-align: center;
+
+}
+
+#back{
+  color:black;
+  position: absolute;;
+  background-color: white;
+  width:100px;
+  height:40px;
+  top:630px;
+  left:220px;
+}
+
+#check{
+  color:black;
+  position: absolute;;
+  background-color: #ddf030fd;
+  width:100px;
+  height:40px;
+  top:630px;
+  left:950px;
+}

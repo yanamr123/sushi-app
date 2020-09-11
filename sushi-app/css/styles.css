@@ -1,0 +1,264 @@
+/* 入れ子にできるものを入れ子にする */
+
+body{
+  margin: 0px;
+  width: 1024px;
+  height: 460px;
+  font-family: Verdana, sans-serif;
+}
+
+.back{
+  width: 870px;
+  height: 639px;
+  background: #c00e32;
+  position:absolute;
+  top:41px;
+  left:200px;
+  /* z-index:2; */
+}
+
+.back2{
+  width: 1000px;
+  height: 800px;
+  background: blue;
+  position:absolute;
+  top:41px;
+  left:200px;
+  z-index:10;
+}
+
+
+.back .history_back{
+  width: 1024px;
+  height: 460px;
+  background: #c00e32;
+  z-index:10;
+}
+
+.main{
+  width: 560px;
+  height: 430px;
+  background: #000000dc;
+  position:absolute;
+  top:233px;
+  left:205px;
+}
+
+.main ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  position:relative;
+}
+
+.main ul li{
+  height:175px;
+  cursor:pointer;
+  list-style-type:none;
+}
+
+/* .main ul li img{ */
+/* .sushi li img{ */
+.sushi li img{
+  width:180px;
+  height:140px;
+  position: relative;
+  /* top:20px; */
+  display: flex;
+  /* padding-left: 10px; */
+  /* position:absolute; */
+  margin-bottom: 0px;
+}
+
+/* .main ul li item_cost{ */
+.sushi li item_cost{
+  font-weight: bold;
+  position:relative;
+  bottom:167px;
+  right: 0px;
+  color:#2f4f4f;
+  background-color: #bdb76b;
+  border: 4px solid #cd853f;
+}
+
+.sushi li item_name{
+  display:block;
+  background-color: #c0c0c0;
+  box-sizing: border-box;
+  border: 2px solid #696969;
+  font-weight: bold;
+  width:180px;
+  text-align: center;
+}
+
+.main now_page{
+ color:white; 
+ position:relative;
+ bottom:2px;
+ left:240px;
+ font-size: 20px;
+}
+
+nav{
+  display:flex;
+  position:absolute;
+  top:0px;
+  left:0px;
+  cursor: pointer;
+}
+
+#prev,#next{
+  background-color: azure;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  width:100px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  position:relative;
+  top: 600px;
+  line-height: 45px;
+}
+
+#prev{
+  left: 210px;
+}
+
+#next{
+  left: 560px;
+}
+
+#game{
+  position:relative;
+  top:86px;
+  left:580px;
+  background-color: #f5deb3;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  width:250px;
+  height:50px; 
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.order_button{
+  background-color: #e90f0f;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  width:280px;
+  height:70px; 
+  font-size: 30px;
+  color: azure;
+  font-weight: bold;
+  text-align: center;
+  /* vertical-align: middle; */
+  position:relative;
+  top: 588px;
+  left: 325px;
+  line-height: 70px;
+}
+
+/* .order_button .want_push{ */
+.want_push{
+  opacity: 0.6;
+  background-color: hotpink;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+#history,#check{
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  width:120px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  position:relative;
+  top: 157px;
+  line-height: 50px;
+}
+
+#history{
+  background-color: azure;
+  left: 50px;
+}
+
+#check{
+  background-color: #ddf030fd;
+  left: 60px;
+}
+
+table{
+  color: azure;
+  width: 290px;
+  font-weight: bold;
+  text-align: center;
+  position:absolute;
+  top: 233px;
+  left: 770px;
+  border-collapse: collapse
+}
+
+table,th,td{
+  border: solid 2px black;
+}
+
+th{
+  background: #e90f0f;
+  height: 45px;
+  /* line-height: 30px; */
+}
+
+td {
+  background: #efefef;
+  height: 47px;
+  color:black;
+  /* line-height: 40px; */
+}
+
+/* table中の増える・減るボタン */
+.inc_dec{
+  cursor:pointer;
+  background-color: rgba(180, 180, 180, 0.932);
+  border-radius: 30%;
+  border-color: grey;
+  position: relative;
+}
+
+/* メニュボタンに関するul */
+ul{
+  list-style:none;
+  padding: 0x;
+  margin: 0x;
+}
+
+.menu_buttons{
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  gap: 10px;
+}
+
+.menu_buttons li{
+  position:relative;
+  top: 30px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 22px;
+  color:#000;
+  font-weight: bolder;
+  width: 150px;
+  height: 50px;
+  background: #ffc0c0;
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+.menu_buttons li.pushed {
+  background: #ff4500;
+}
